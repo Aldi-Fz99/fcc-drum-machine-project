@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+}
+body{
+  font-size: 24px;
+}
+h2{
+  font-size: 28px;
+}
+#drum-machine{
+  margin:15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.wripper{
+  width:100%;
+  display: grid;
+  padding: 10px;
+  grid-gap: 15px;
+  margin-top: 40px;
+  border-radius: 15px;
+  grid-template-columns: 1fr;
+  background-image: linear-gradient(
+  -225deg,
+    #755dd5 35%, 
+    #b9deff 100%   
+  );
+}
+.keyboard {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.keyboard .drum-pad{
+  width: 100%;
+  height: 80px;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  backgorund-color: #ffffff;
+  transition: all .3s ease-in-out;
+}
+@media(min-width: 768px){
+  .wripper{
+    width: 680px;
+  }
+}
+@media(min-width: 992px){
+  .wripper{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.change{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.change > button,
+.change > input,
+.change > h2{
+  margin-buttom: 10px;
+}
+
+.change button{
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #000000;
+} 
